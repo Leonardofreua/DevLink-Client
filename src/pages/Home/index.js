@@ -266,7 +266,15 @@ export default function Home() {
         )}
 
         <Loading>
-          {loading && <Spinner animation="grow" variant="success" />}
+          {loading && (
+            <Spinner
+              as="span"
+              variant="success"
+              animation="grow"
+              role="status"
+              aria-hidden="true"
+            />
+          )}
         </Loading>
       </List>
     </>
