@@ -12,6 +12,10 @@ export const LoginContainer = styled.div`
   box-shadow: 0px 4px 20px -3px rgba(0, 0, 0, 0.75);
   padding: 20px;
 
+  @media (max-width: 1000px) {
+    margin: 0 auto;
+  }
+
   div:first-of-type {
     text-align: center;
     padding: 30px 0 20px;

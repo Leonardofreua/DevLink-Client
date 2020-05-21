@@ -8,6 +8,16 @@ export const TextualContent = styled.div`
   align-items: center;
   padding: 20px;
 
+  @media (max-width: 1000px) {
+    h1 {
+      display: none;
+    }
+
+    p {
+      display: none;
+    }
+  }
+
   h1 {
     font-size: 37px;
     font-weight: bold;

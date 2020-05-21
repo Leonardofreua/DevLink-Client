@@ -9,13 +9,17 @@ export const SearchForm = styled.form`
   max-width: 520px;
   margin-top: 30px;
   align-items: center;
+
+  @media (max-width: 1000px) {
+    width: 100%;
+    margin: 30px 0 0 150px;
+  }
 `;
 
 export const TechsSelect = styled(Select)`
   width: 100%;
   max-width: 470px;
-  margin-right: 8px;
-  margin-left: 20px;
+  margin: 0 8px 0 20px;
   padding: 5px;
   background: #e6e6f4;
   border: 1px solid #dcdce6;
@@ -32,12 +36,25 @@ export const ResultLegend = styled.div`
     font-size: 18px;
     text-align: center;
   }
+
+  @media (max-width: 1000px) {
+    margin: 40px 0 4px 120px;
+
+    span {
+      width: 100%;
+      font-size: 13px;
+    }
+  }
 `;
 
 export const MaxDistanceLabel = styled.div`
   margin-bottom: 20px;
   font-size: 12px;
   color: #999;
+
+  @media (max-width: 1000px) {
+    margin-left: 110px;
+  }
 `;
 
 export const SearchButton = styled.button`
@@ -56,6 +73,14 @@ export const List = styled.main`
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     list-style: none;
+
+    @media (max-width: 650px) {
+      grid-template-columns: 1fr;
+
+      li {
+        width: 480px;
+      }
+    }
 
     li {
       background: #fff;

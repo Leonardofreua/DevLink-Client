@@ -12,6 +12,11 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
 
+  @media (max-width: 1000px) {
+    margin-left: 60px;
+    margin-top: 0;
+  }
+
   form {
     width: 100%;
     display: flex;

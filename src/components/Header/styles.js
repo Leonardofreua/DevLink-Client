@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 import { lighten } from 'polished';
 
 export const ContainerHeader = styled.header`
+  width: 100%;
   background: #24292e;
   padding: 0 30px;
   transition: box-shadow 0.3s;
@@ -9,11 +10,14 @@ export const ContainerHeader = styled.header`
   &:hover {
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.75);
   }
+
+  @media (max-width: 1000px) {
+    min-width: 520px;
+  }
 `;
 
 export const Content = styled.div`
   height: 64px;
-  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;

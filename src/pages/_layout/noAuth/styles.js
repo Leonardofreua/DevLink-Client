@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   width: 100%;
   max-width: 1200px;
+  min-width: 520px;
   height: 90vh;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -10,6 +11,10 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
 
   span {
     color: #d43b11;

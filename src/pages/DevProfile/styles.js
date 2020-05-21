@@ -8,6 +8,11 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
 
+  @media (max-width: 1000px) {
+    margin-left: 110px;
+    margin-top: 0;
+  }
+
   img {
     margin: 0 auto;
     display: flex;
