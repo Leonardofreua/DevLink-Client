@@ -64,9 +64,9 @@ export default function LogIn() {
           </SubmitButton>
         </Form>
 
-        <div>
+        {/* <div>
           <Link to="/forgotPassword">Forgot your password?</Link>
-        </div>
+        </div> */}
         <div>
           Are you new here? <Link to="/">Create an account</Link>
         </div>
