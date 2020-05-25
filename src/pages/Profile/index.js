@@ -136,16 +136,19 @@ export default function Profile() {
                 name="oldPassword"
                 type="password"
                 placeholder="Old Password"
+                autocomplete="nope"
               />
               <Input
                 name="password"
                 type="password"
                 placeholder="New Password"
+                autocomplete="nope"
               />
               <Input
                 name="confirmPassword"
                 type="password"
                 placeholder="Confirm Password"
+                autocomplete="nope"
               />
             </>
           )}
@@ -157,36 +160,42 @@ export default function Profile() {
             type="url"
             pattern="https://.*"
             placeholder="https://github.com/exampleName"
+            autocomplete="nope"
           />
           <Input
             name="socialMedia.linkedin_url"
             type="url"
             pattern="https://.*"
             placeholder="https://www.linkedin.com/in/example-name-bb4b51249/"
+            autocomplete="nope"
           />
           <Input
             name="socialMedia.youtube_url"
             type="url"
             pattern="https://.*"
             placeholder="https://www.youtube.com/user/exampleChannel"
+            autocomplete="nope"
           />
           <Input
             name="socialMedia.medium_url"
             type="url"
             pattern="https://.*"
             placeholder="https://medium.com/@example"
+            autocomplete="nope"
           />
           <Input
             name="socialMedia.twitter_url"
             type="url"
             pattern="https://.*"
             placeholder="https://twitter.com/example"
+            autocomplete="nope"
           />
           <Input
             name="socialMedia.website_url"
             type="url"
             pattern="https://.*"
             placeholder="https://myblogexample.com"
+            autocomplete="nope"
           />
         </Content>
         <UpdateButton disabled={loading ? 1 : 0}>
