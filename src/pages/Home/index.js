@@ -222,6 +222,18 @@ export default function Home() {
         </MaxDistanceLabel>
       )}
 
+      {loading && (
+        <Loading>
+          <Spinner
+            as="span"
+            variant="success"
+            animation="grow"
+            role="status"
+            aria-hidden="true"
+          />
+        </Loading>
+      )}
+
       <List>
         <ul>
           {currentDevs.map((dev) => (
@@ -264,18 +276,6 @@ export default function Home() {
             paginate={paginate}
           />
         )}
-
-        <Loading>
-          {loading && (
-            <Spinner
-              as="span"
-              variant="success"
-              animation="grow"
-              role="status"
-              aria-hidden="true"
-            />
-          )}
-        </Loading>
       </List>
     </>
   );
