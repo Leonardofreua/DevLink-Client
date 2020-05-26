@@ -14,8 +14,9 @@ import { TechsObject } from '~/utils/TechsObject';
 import { signUpRequest } from '~/store/modules/auth/actions';
 
 const schemaValidation = Yup.object().shape({
-  name: Yup.string().required('Name is required'),
+  name: Yup.string().trim().required('Name is required'),
   email: Yup.string()
+    .trim()
     .email('Enter a valid email')
     .required('Email is required'),
   password: Yup.string()

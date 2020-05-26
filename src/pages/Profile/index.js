@@ -19,12 +19,12 @@ import {
 import { TechsObject } from '~/utils/TechsObject';
 
 const schemaValidation = Yup.object().shape({
-  name: Yup.string().required('Name is required'),
+  name: Yup.string().trim().required('Name is required'),
   email: Yup.string()
+    .trim()
     .email('Enter a valid email')
     .required('Email is required'),
   bio: Yup.string().max(160, 'Max 160 characteres.'),
-
   oldPassword: Yup.string(),
   password: Yup.string().when('oldPassword', (oldPassword, field) =>
     oldPassword
