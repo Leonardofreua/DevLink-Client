@@ -8,9 +8,9 @@ import * as Yup from 'yup';
 
 import { logInRequest } from '~/store/modules/auth/actions';
 
-import { LoginContainer, GithubLoginButton } from './styles';
+import { LoginContainer } from './styles';
 import { TextualContent } from '~/styles/components/TextualContent';
-import { SubmitButton } from '~/styles/components/Button';
+import { SubmitButton, GithubLoginButton } from '~/styles/components/Button';
 
 const schemaValidation = Yup.object().shape({
   email: Yup.string()

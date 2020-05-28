@@ -2,11 +2,12 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Form, Input } from '@rocketseat/unform';
 import { Spinner } from 'react-bootstrap';
+import { FaGithub } from 'react-icons/fa';
 import * as Yup from 'yup';
 
-import { SignUpContainer } from './styles';
+import { SignUpContainer, Divisor } from './styles';
 import { TextualContent } from '~/styles/components/TextualContent';
-import { SubmitButton } from '~/styles/components/Button';
+import { SubmitButton, GithubLoginButton } from '~/styles/components/Button';
 import Select from '~/components/TechSelect';
 
 import { TechsObject } from '~/utils/TechsObject';
@@ -68,6 +69,12 @@ export default function SignUp() {
 
       <SignUpContainer>
         <h2>Sign_up</h2>
+
+        <GithubLoginButton to="/oauth/github">
+          <FaGithub size={22} color="#FFF" /> With <strong>Github</strong>
+        </GithubLoginButton>
+
+        <Divisor>OR</Divisor>
 
         <Form schema={schemaValidation} onSubmit={handleSubmit}>
           <Input name="name" placeholder="Name" />

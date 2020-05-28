@@ -14,3 +14,12 @@ export const SignUpContainer = styled.div`
     margin: 0 auto;
   }
 `;
+
+export const Divisor = styled.div`
+  position: relative;
+  text-align: center;
+  margin: 20px 0 -15px 0;
+  line-height: 14px;
+  font-size: 14px;
+  color: #aaa;
+`;
