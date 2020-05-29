@@ -60,8 +60,11 @@ export function* signUp({ payload }) {
 
     history.push('/logIn');
   } catch (err) {
-    toast.error('Sign up failed, check you data');
-
+    if (err.response.status === 400) {
+      toast.error('This email is already in use.');
+    } else {
+      toast.error('Sign up failed, check you data');
+    }
     yield put(signFailure());
   }
 }
